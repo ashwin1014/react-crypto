@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/no-array-index-key */
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
@@ -38,7 +39,8 @@ const Space = ({ direction = 'horizontal', size = 'sm', className = '', itemClas
           className={cx('element-spacing__item', { [`${itemClassName}`]: itemClassName })}
           key={i}
           style={childNodes.lastIndexOf(child) === itemsLength - 1 ? { [marginDirection]: 0 } : { [marginDirection]: getSpacing[size] || 'sm' }}
-          item-index={childNodes.lastIndexOf(child)}>
+          item-index={childNodes.lastIndexOf(child)}
+        >
           {child}
         </div>
       ))}

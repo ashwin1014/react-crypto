@@ -26,7 +26,8 @@
           "@localization": "./src/localization",
           "@sharedComponents": "./src/sharedComponents",
           "@utils": "./src/utils",
-          "@pages": "./src/app/pages"
+          "@pages": "./src/app/pages",
+          "@services": "./src/services"
         }
       }
     ]

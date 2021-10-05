@@ -39,7 +39,7 @@ module.exports = (_, args) => {
       // sourceMapFilename: '[name].js.map'
       // assetModuleFilename: 'static/media/[name].[hash:8].[ext]'
     },
-   devServer: {
+    devServer: {
       port: 3000,
       // watchFiles: true,
       hot: true,
@@ -65,7 +65,8 @@ module.exports = (_, args) => {
         '@localization': path.resolve(__dirname, './src/localization'),
         '@sharedComponents': path.resolve(__dirname, './src/sharedComponents'),
         '@utils': path.resolve(__dirname, './src/utils'),
-        '@pages': path.resolve(__dirname, './src/app/pages')
+        '@pages': path.resolve(__dirname, './src/app/pages'),
+        '@services': path.resolve(__dirname, './src/services')
       },
       fallback: {
         stream: require.resolve('stream-browserify')

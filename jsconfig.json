@@ -16,6 +16,7 @@
       "@sharedComponents": ["src/sharedComponents/*"],
       "@pages": ["src/app/pages/*"],
       "@utils": ["src/utils/*"],
+      "@services": ["src/services/*"],
       "@/*": ["src*"]
     }
   },

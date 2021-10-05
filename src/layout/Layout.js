@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { Layout as AntLayout } from 'antd';
 
 import PropTypes from 'prop-types';
 
@@ -13,7 +14,11 @@ const Layout = ({ children }) => {
     alert('You appear to be offline!');
   }, []);
   window.addEventListener('offline', () => showOfflineNotification());
-  return <main className='app-layout'>{isPrerendering() ? <Loader /> : children}</main>;
+  return (
+    <AntLayout className='app-layout' style={{ minHeight: 'calc(100vh - 118px)' }}>
+      {isPrerendering() ? <Loader /> : children}
+    </AntLayout>
+  );
 };
 
 Layout.propTypes = {
